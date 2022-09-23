@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pokemon_nnT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="iwN-xR-oTf">
+                                <rect key="frame" x="109" y="552" width="94" height="32"/>
+                                <connections>
+                                    <action selector="Butto_action:" destination="BYZ-38-t0r" eventType="valueChanged" id="N9q-RK-zE5"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blaizeken" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yno-vR-REq">
+                                <rect key="frame" x="181" y="124" width="99" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pokemon ID: 8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQM-1v-nwM">
+                                <rect key="frame" x="223" y="558" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="blaizeken" translatesAutoresizingMaskIntoConstraints="NO" id="4VV-2q-Nku">
+                                <rect key="frame" x="87" y="192" width="240" height="252"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="252" id="xYB-0r-pzd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iwN-xR-oTf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="1KL-dj-kiU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4VV-2q-Nku" secondAttribute="trailing" constant="87" id="1Yq-Jl-QE0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yno-vR-REq" secondAttribute="trailing" constant="134" id="FEH-5B-EWH"/>
+                            <constraint firstItem="rQM-1v-nwM" firstAttribute="top" secondItem="4VV-2q-Nku" secondAttribute="bottom" constant="113" id="IPC-4p-SnR"/>
+                            <constraint firstItem="4VV-2q-Nku" firstAttribute="top" secondItem="Yno-vR-REq" secondAttribute="bottom" constant="48" id="Uti-BN-muo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rQM-1v-nwM" secondAttribute="trailing" constant="101" id="lS1-SN-G4q"/>
+                            <constraint firstItem="iwN-xR-oTf" firstAttribute="top" secondItem="4VV-2q-Nku" secondAttribute="bottom" constant="107" id="rQn-WP-GEu"/>
+                            <constraint firstItem="4VV-2q-Nku" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="sms-qF-aDH"/>
+                            <constraint firstItem="Yno-vR-REq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="wLn-Fm-Xnc"/>
+                            <constraint firstItem="Yno-vR-REq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="181" id="yQc-Gl-7Lr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Id_pokemon" destination="rQM-1v-nwM" id="FIf-Ny-Px0"/>
+                        <outlet property="Image_Pokemon" destination="4VV-2q-Nku" id="dv3-Kc-mpE"/>
+                        <outlet property="Name_pokemon" destination="Yno-vR-REq" id="psL-L8-gKW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189.85507246376812" y="24.776785714285712"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blaizeken" width="225" height="225"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
