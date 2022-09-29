@@ -19,7 +19,7 @@
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="iwN-xR-oTf">
                                 <rect key="frame" x="109" y="552" width="94" height="32"/>
                                 <connections>
-                                    <action selector="Butto_action:" destination="BYZ-38-t0r" eventType="valueChanged" id="N9q-RK-zE5"/>
+                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Vyq-pH-5f8"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blaizeken" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yno-vR-REq">
@@ -35,7 +35,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="blaizeken" translatesAutoresizingMaskIntoConstraints="NO" id="4VV-2q-Nku">
-                                <rect key="frame" x="87" y="192" width="240" height="252"/>
+                                <rect key="frame" x="87" y="191" width="240" height="252"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="252" id="xYB-0r-pzd"/>
                                 </constraints>
@@ -57,9 +57,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="Id_pokemon" destination="rQM-1v-nwM" id="FIf-Ny-Px0"/>
-                        <outlet property="Image_Pokemon" destination="4VV-2q-Nku" id="dv3-Kc-mpE"/>
-                        <outlet property="Name_pokemon" destination="Yno-vR-REq" id="psL-L8-gKW"/>
+                        <outlet property="buttonStepper" destination="iwN-xR-oTf" id="oSn-2n-Ptw"/>
+                        <outlet property="idpokemon" destination="rQM-1v-nwM" id="WY4-lH-VI9"/>
+                        <outlet property="image" destination="4VV-2q-Nku" id="kBv-Om-1as"/>
+                        <outlet property="name" destination="Yno-vR-REq" id="k0B-Rh-4Gb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
